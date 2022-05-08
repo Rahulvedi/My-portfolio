@@ -47,7 +47,7 @@
 }
 .downloadbtn, .downloadbtn:focus{
     width: 30%;
-    outline: none;
+    /* outline: none; */
     background: var(--color-gradient);
     font-size: var(--sizes-small);
     border: none;
@@ -60,6 +60,10 @@
     bottom: -8rem;
     box-shadow: var(--botton-shadow);
     letter-spacing: 1.5px;
+    transition: 200ms;
+  }
+  .downloadbtn:hover{
+      transform: scale(1.1);
   }
   .socials{
       width: 15%;

@@ -1,0 +1,110 @@
+.About {
+  display: flex;
+  padding: var(--spaces-xhuge);
+}
+.discription {
+  text-align: right;
+  width: 35%;
+}
+.title {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--color-tertiary);
+  text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.46);
+}
+.subtitle {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--sizes-medium);
+  color: var(--color-primary);
+}
+.info {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--sizes-medium);
+  margin: var(--spaces-xxlarge) 0;
+  word-spacing: 2px;
+  opacity: 0.8;
+}
+.imageWrapper {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  width: 65%;
+}
+.about-image {
+  height: 80%;
+  width: 60%;
+}
+.about-btn {
+  width: 50%;
+  background: var(--color-gradient);
+  font-size: var(--sizes-small);
+  border: none;
+  color: white;
+  padding: 12px 0px;
+  font-family: "Inika", serif;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: var(--botton-shadow);
+  letter-spacing: 1.5px;
+  transition: 200ms;
+}
+.about-btn i {
+  font-size: var(--sizes-small);
+  font-weight: lighter;
+}
+.about-btn:hover {
+  transform: scale(1.1);
+}
+
+
+/* Media Querries */
+@media screen and (min-width:680px)and (max-width:1024px){
+    .About{
+        padding: var(--spaces-xxlarge);
+    }
+    .discription{
+        width: 40%;
+    }
+    .about-image {
+        width: 80%;
+        height: 100%;
+      }
+      .about-btn{
+        width: 70%;
+    }
+}
+@media screen and (max-width:680px){
+    .About{
+        flex-direction: column-reverse;
+        padding: var(--spaces-large);
+    }
+    .discription{
+        width: 100%;
+        text-align: center;
+    }
+    .imageWrapper{
+        width: 100%;
+        height: 50%;
+        margin: var(--spaces-xlarge) 0;
+        justify-content: center;
+    }
+    .about-image {
+        width: 70%;
+      }
+    .title{
+        font-size: var(--sizes-xlarge);
+    }
+    .info{
+        font-size: var(--sizes-small);
+        line-height: 1.5;
+    }
+    
+}
+
