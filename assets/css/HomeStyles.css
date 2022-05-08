@@ -9,6 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .Home::before {
   content: "";
@@ -45,12 +46,13 @@
     font-size: var(--sizes-medium);
 }
 .downloadbtn, .downloadbtn:focus{
+    width: 30%;
     outline: none;
     background: var(--color-gradient);
     font-size: var(--sizes-small);
     border: none;
     color: white;
-    padding: 12px 80px;
+    padding: 12px 0px;
     font-family: "Inika", serif;
     border-radius: 8px;
     position: relative;
@@ -59,11 +61,29 @@
     box-shadow: var(--botton-shadow);
     letter-spacing: 1.5px;
   }
+  .socials{
+      width: 15%;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      z-index: 1;
+      position: absolute;
+      right: var(--spaces-xsmall);
+      bottom: var(--spaces-xsmall);
+      opacity: .7;
+      
+  }
+  .socials i{
+      font-size: var(--sizes-xlarge);
+      cursor: pointer;
+      transition-duration: 200ms;
+  }
+  .socials i:hover{
+    transform:  scale(1.5);
+    /* transform: translateY(-1.5rem); */
+  }
 /* Media Qurries */
 @media screen and (max-width: 480px) {
-    .Home{
-        height: 30rem;
-    }
     .Content h1 {
         font-size: var(--sizes-xlarge);
       }
@@ -73,12 +93,33 @@
     .Content p {
         font-size: var(--sizes-small);
     }
+    .downloadbtn{
+        width: 70%;
+        font-size: var(--sizes-xsmall);
+        letter-spacing: 1px;
+    }
+    .socials{
+        width: 30%;
+    }
+    .socials i{
+        font-size: var(--sizes-small);
+    }
 }
-@media screen and (min-width: 480px) and (max-width: 780px) {
-  .Content h1 {
-    font-size: var(--sizes-xxlarge);
-  }
-  .Content h2{
-    font-size: var(--sizes-xlarge);
-}
+@media screen and (min-width: 480px) and (max-width: 980px) {
+    .Content h1 {
+        font-size: var(--sizes-xxlarge);
+    }
+    .Content h2{
+        font-size: var(--sizes-xlarge);
+    }
+    .downloadbtn{
+        width: 50%;
+        
+    }
+    .socials{
+        width: 20%;
+    }
+    .socials i{
+        font-size: var(--sizes-medium);
+    }
 }
