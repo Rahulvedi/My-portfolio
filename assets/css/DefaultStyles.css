@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+/* Colors */
+--color-primary:#7906D2;
+--color-secondary:#FF239A;
+--color-tertiary:#212E52;
+--color-gradient:linear-gradient(91.19deg, #7906D2 0%, #FF239A 100%);
+--color-gradientInverted:linear-gradient(91.27deg, #FF239A 0%, #7906D2 100%);
+/* Sizes */
+--sizes-xsmall:12px;
+--sizes-small:16px;
+--sizes-medium:20px;
+--sizes-large:24px;
+--sizes-xlarge:32px;
+--sizes-xxlarge:48px;
+--sizes-xxxlarge:64px;
+/* Spaces */
+--spaces-xsmall:12px;
+--spaces-small:16px;
+--spaces-medium:20px;
+--spaces-large:24px;
+--spaces-xlarge:32px;
+--spaces-xxlarge:48px;
+--spaces-xxxlarge:64px;
+--botton-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
