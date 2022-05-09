@@ -1,0 +1,115 @@
+.Projects {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spaces-xhuge) var(--spaces-xhuge);
+  padding-top: 0;
+}
+.project-title {
+  color: var(--color-primary);
+  font-family: "Inika", serif;
+  font-size: var(--sizes-xlarge);
+  margin: 0 auto;
+  margin-bottom: var(--spaces-xxlarge);
+}
+.project {
+  display: flex;
+}
+.project-discription {
+  width: 40%;
+}
+.project-name {
+  color: var(--color-primary);
+  font-family: "Inika", serif;
+  font-size: var(--sizes-large);
+  margin-bottom: var(--spaces-xlarge);
+}
+.project-info,
+.project-info li {
+  font-size: var(--sizes-medium);
+  font-family: "Roboto", sans-serif;
+  opacity: 0.8;
+  margin-bottom: var(--spaces-small);
+}
+.project-info li {
+  margin-left: var(--spaces-large);
+}
+.project-images {
+  padding: var(--spaces-xlarge);
+  position: relative;
+  width: 60%;
+}
+.img-1 {
+  position: absolute;
+  height: 60%;
+  width: 50%;
+  border-radius: var(--sizes-large);
+  bottom: 0;
+  left: var(--spaces-xhuge);
+  z-index: 1;
+  cursor: pointer;
+  transition: 600ms;
+  transform: scale(1.2);
+}
+.img-2 {
+  position: absolute;
+  height: 60%;
+  width: 50%;
+  border-radius: var(--sizes-large);
+  right: var(--spaces-xhuge);
+  right: 0;
+  cursor: pointer;
+  transition: 600ms;
+  transform: scale(1.2);
+}
+/* .img-1:hover,
+.img-2:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+} */
+/* Media Querries */
+
+@media screen and (max-width: 980px) {
+  .Projects {
+    padding: var(--spaces-large) var(--spaces-large);
+  }
+  .project {
+    flex-direction: column-reverse;
+  }
+  .project-discription {
+    width: 100%;
+    margin-top: var(--spaces-large);
+  }
+  .project-images {
+    height: 15rem;
+    width: 100%;
+    padding: 0;
+    /* height: 20rem; */
+  }
+  .img-1 {
+    width: 40%;
+    left: var(--spaces-large);
+    transform: scale(1);
+  }
+  .img-2 {
+    width: 40%;
+    right: var(--spaces-large);
+    transform: scale(1);
+  }
+  .project-name {
+    font-size: var(--sizes-medium);
+  }
+  .project-info,
+  .project-info li {
+    font-size: var(--sizes-small);
+  }
+}
+@media screen and (max-width: 480px) {
+  .img-1 {
+    width: 70%;
+    left: 0;
+  }
+  .img-2 {
+    width: 70%;
+    right: 0;
+  }
+}
