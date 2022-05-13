@@ -5,7 +5,7 @@
   align-items: center;
   height: 40rem;
   width: 100%;
-  background: url("../images/pexels-tony-schnagl-5588217.jpg");
+  background: url("../images/pexels-tony-schnagl-5588217-min.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,6 +19,7 @@
   right: 0;
   height: inherit;
   opacity: 0.6;
+  
 }
 .Content {
   height: 70%;
@@ -43,87 +44,86 @@
   margin-bottom: var(--spaces-medium);
 }
 .Content p {
-    font-size: var(--sizes-medium);
+  font-size: var(--sizes-medium);
 }
-.downloadbtn, .downloadbtn:focus{
-    width: 30%;
-    /* outline: none; */
-    background: var(--color-gradient);
-    font-size: var(--sizes-small);
-    border: none;
-    color: white;
-    padding: 12px 0px;
-    font-family: "Inika", serif;
-    border-radius: 8px;
-    position: relative;
-    cursor: pointer;
-    bottom: -8rem;
-    box-shadow: var(--botton-shadow);
-    letter-spacing: 1.5px;
-    transition: 200ms;
-  }
-  .downloadbtn:hover{
-      transform: scale(1.1);
-  }
-  .socials{
-      width: 15%;
-      display: flex;
-      justify-content: space-between;
-      color: white;
-      z-index: 1;
-      position: absolute;
-      right: var(--spaces-xsmall);
-      bottom: var(--spaces-xsmall);
-      opacity: .7;
-      
-  }
-  .socials i{
-      font-size: var(--sizes-xlarge);
-      cursor: pointer;
-      transition-duration: 200ms;
-  }
-  .socials i:hover{
-    transform:  scale(1.5);
-    /* transform: translateY(-1.5rem); */
-  }
+.downloadbtn,
+.downloadbtn:focus {
+  width: 30%;
+  /* outline: none; */
+  background: var(--color-gradient);
+  font-size: var(--sizes-small);
+  border: none;
+  color: white;
+  padding: 12px 0px;
+  font-family: "Inika", serif;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  bottom: -8rem;
+  box-shadow: var(--botton-shadow);
+  letter-spacing: 1.5px;
+  transition: 200ms;
+}
+.downloadbtn:hover {
+  transform: scale(1.1);
+}
+.socials {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  right: var(--spaces-xsmall);
+  bottom: var(--spaces-xsmall);
+  opacity: 0.7;
+}
+.socials i {
+  font-size: var(--sizes-xlarge);
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+.socials i:hover {
+  transform: scale(1.5);
+  /* transform: translateY(-1.5rem); */
+}
 /* Media Qurries */
 @media screen and (max-width: 480px) {
-    .Content h1 {
-        font-size: var(--sizes-xlarge);
-      }
-      .Content h2{
-        font-size: var(--sizes-large);
-    }
-    .Content p {
-        font-size: var(--sizes-small);
-    }
-    .downloadbtn{
-        width: 70%;
-        font-size: var(--sizes-xsmall);
-        letter-spacing: 1px;
-    }
-    .socials{
-        width: 30%;
-    }
-    .socials i{
-        font-size: var(--sizes-small);
-    }
+  .Content h1 {
+    font-size: var(--sizes-xlarge);
+  }
+  .Content h2 {
+    font-size: var(--sizes-large);
+  }
+  .Content p {
+    font-size: var(--sizes-small);
+  }
+  .downloadbtn {
+    width: 70%;
+    font-size: var(--sizes-xsmall);
+    letter-spacing: 1px;
+  }
+  .socials {
+    width: 30%;
+  }
+  .socials i {
+    font-size: var(--sizes-small);
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 980px) {
-    .Content h1 {
-        font-size: var(--sizes-xxlarge);
-    }
-    .Content h2{
-        font-size: var(--sizes-xlarge);
-    }
-    .downloadbtn{
-        width: 50%;
-        
-    }
-    .socials{
-        width: 20%;
-    }
-    .socials i{
-        font-size: var(--sizes-medium);
-    }
+  .Content h1 {
+    font-size: var(--sizes-xxlarge);
+  }
+  .Content h2 {
+    font-size: var(--sizes-xlarge);
+  }
+  .downloadbtn {
+    width: 50%;
+  }
+  .socials {
+    width: 20%;
+  }
+  .socials i {
+    font-size: var(--sizes-medium);
+  }
 }

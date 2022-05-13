@@ -21,40 +21,51 @@
     <link rel="stylesheet" href="./assets/css/AboutStyles.css" />
     <link rel="stylesheet" href="./assets/css/SkillsStyles.css" />
     <link rel="stylesheet" href="./assets/css/ProjectsStyles.css" />
+    <link rel="stylesheet" href="./assets/css/ContactStyles.css" />
   </head>
   <body>
     <div class="Container">
       <header class="Header">
         <navbar class="navbar">
           <ul class="navLinks">
-            <li class="Links">Home</li>
-            <li class="Links">About</li>
-            <li class="Links">Skills</li>
-            <li class="Links">Projects</li>
-            <li class="Links">Contact</li>
+            <a href="#Home"><li class="Links">Home</li></a>
+            <a href="#About"><li class="Links">About</li></a>
+            <a href="#Skills"><li class="Links">Skills</li></a>
+            <a href="#Projects"><li class="Links">Projects</li></a>
+            <a href="#Contact"><li class="Links">Contact</li></a>
           </ul>
           <div class="hamburgerIcon">
             <i class="fa fa-bars"></i>
           </div>
         </navbar>
       </header>
-      <section class="Home">
+      <section class="Home" id="Home">
         <div class="Content">
           <h2>HELLO ,I AM</h2>
           <h1>RAHUL VEDI</h1>
           <p>
             I'M A CREATIVE WEB DEVELOPER AND I MAKE YOUR BUSINESS LOOKS GREAT
           </p>
-          <button class="downloadbtn">DOWNLOAD CV</button>
+          <button class="downloadbtn">
+            <a href="./assets/docs/RahulVedi-Resume.docx">DOWNLOAD CV</a>
+          </button>
         </div>
         <div class="socials">
-          <i class="fa fa-instagram" title="Instagram"></i>
-          <i class="fa fa-github" title="Github"></i>
-          <i class="fa fa-twitter" title="Twitter"></i>
-          <i class="fa fa-linkedin" title="Linkedin"></i>
+          <a href="https://www.instagram.com/rahulvedi60/" target="-_blank">
+            <i class="fa fa-instagram" title="Instagram"></i>
+          </a>
+          <a href="https://github.com/Rahulvedi" target="-_blank">
+            <i class="fa fa-github" title="Github"></i>
+          </a>
+          <a href="https://twitter.com/RahulVedi10" target="-_blank">
+            <i class="fa fa-twitter" title="Twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rahulvedi/" target="-_blank">
+            <i class="fa fa-linkedin" title="Linkedin"></i>
+          </a>
         </div>
       </section>
-      <section class="About">
+      <section class="About" id="About">
         <div class="discription">
           <h1 class="title">RAHUL VEDI</h1>
           <h3 class="subtitle">Web Developer</h3>
@@ -77,7 +88,7 @@
           />
         </div>
       </section>
-      <section class="Skills">
+      <section class="Skills" id="Skills">
         <div class="skills-imageWrapper">
           <img
             src="./assets/images/undraw_programming_re_kg9v.svg"
@@ -96,7 +107,7 @@
           </div>
         </div>
       </section>
-      <section class="Projects">
+      <section class="Projects" id="Projects">
         <h1 class="project-title">Projects</h1>
         <div class="project">
           <div class="project-discription">
@@ -113,34 +124,121 @@
               <li>Insertion Sort (insertionsort)</li>
               <li>Merge Sort (mergesort)</li>
             </ul>
+            <a
+              href="https://rahul-sorting-visualizer.netlify.app"
+              target="_blank"
+              class="projectLink"
+              >Go to the Website</a
+            >
           </div>
           <div class="project-images">
-              <img src="./assets/images/Frame 17.png" alt="" srcset="">
+            <div class="project-images-innerContainer">
+              <img
+                src="./assets/images/SortingVisulizerImg1.png"
+                alt=""
+                srcset=""
+                class="Img1"
+              />
+              <img
+                src="./assets/images/SortingVisulizerImg2.png"
+                alt=""
+                srcset=""
+                class="Img2"
+              />
+            </div>
           </div>
         </div>
         <div class="project">
           <div class="project-images">
-              <img src="./assets/images/Frame 18.png" alt="" srcset="">
+            <div class="project-images-innerContainer">
+              <img
+                src="./assets/images/ChatApplicationImg1.png"
+                alt=""
+                srcset=""
+                class="Img1"
+              />
+              <img
+                src="./assets/images/ChatApplicationImg2.png"
+                alt=""
+                srcset=""
+                class="Img2"
+              />
+            </div>
           </div>
           <div class="project-discription">
             <h2 class="project-name">CHAT APPLICATION</h2>
             <p class="project-info">
-              The main objective of the Online Chat Application is to manage the details of Chat Application,Online Chat,Smiles Chat,Users,Chat History. It manages all the information about Chat Application, Chat Profile, Chat History, Chat Application. The project is totally built at administrative end and thus only the administrator is guaranteed the access.
+              The main objective of the Online Chat Application is to manage the
+              details of Chat Application,Online Chat,Smiles Chat,Users,Chat
+              History. It manages all the information about Chat Application,
+              Chat Profile, Chat History, Chat Application. The project is
+              totally built at administrative end and thus only the
+              administrator is guaranteed the access.
             </p>
-            <p class="project-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptates vitae quam, ea, quo libero rerum non repudiandae unde consequuntur dolorem. Ad, nihil quasi magni culpa illo minima aliquid tempore voluptates maxime laboriosam blanditiis voluptatibus accusamus deserunt consequatur perferendis dolorum!
-            </p>
+            <a
+              href="https://rahul-chatbot-reactjs.netlify.app"
+              target="_blank"
+              class="projectLink"
+              >Go to the Website</a
+            >
           </div>
         </div>
         <div class="project">
           <div class="project-discription">
             <h2 class="project-name">NOTES APPLICATION</h2>
             <p class="project-info">
-              Typically when we get an idea or we hear one, we tend to look for a piece of paper to jot it down. However, the times are changing. We now live in an era of information overload. And, sadly, it has made it quite easy for us to lose information on a daily basis. As a result, it becomes even easier to forget to check out the information or share it with your team. Or worse, lose the information that you jotted down. This is where apps for taking notes come in handy. 
+              Typically when we get an idea or we hear one, we tend to look for
+              a piece of paper to jot it down. However, the times are changing.
+              We now live in an era of information overload. And, sadly, it has
+              made it quite easy for us to lose information on a daily basis. As
+              a result, it becomes even easier to forget to check out the
+              information or share it with your team. Or worse, lose the
+              information that you jotted down. This is where apps for taking
+              notes come in handy.
             </p>
+            <a
+              href="https://mynotes-reactjs.netlify.app"
+              target="_blank"
+              class="projectLink"
+              >Go to the Website</a
+            >
           </div>
           <div class="project-images">
-              <img src="./assets/images/Frame 19.png" alt="" srcset="">
+            <div class="project-images-innerContainer">
+              <img
+                src="./assets/images/NotesApplicationImg1.png"
+                alt=""
+                srcset=""
+                class="Img1"
+              />
+              <img
+                src="./assets/images/NotesApplicationImg2.png"
+                alt=""
+                srcset=""
+                class="Img2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Contact" id="Contact">
+        <h1 class="contact-title">Contact Me</h1>
+        <div class="contact-info">
+          <div class="address-section">
+            <h1>Address</h1>
+            <p><i class="fa fa-phone"></i></i> +91-8890365630</p>
+            <p><i class="fa fa-envelope"></i> rahul.v7800@gmail.com</p>
+            <p><i class="fa fa-at"></i> Arihant Resisdency,Flat:202,Sikar(RAJ),INDIA</p>
+          </div>
+          <div class="contact-section">
+            <h1>Don't be a Stranger just say Hello!</h1>
+            <p>Thank you for your interest in my services.Please fill out the form or e-mail me at "rahul.v7800@gmail.com"and I will get back to you promptly regarding  your request.</p>
+            <form action="" class="contact-form">
+              <input type="text" name="" id="" placeholder="Name">
+              <input type="email" name="" id="" placeholder="E-Mail">
+              <input type="text" name="" id="" placeholder="Message">
+              <button>Send Message</button>
+            </form>
           </div>
         </div>
       </section>

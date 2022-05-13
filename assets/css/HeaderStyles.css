@@ -1,6 +1,10 @@
                                                                             /* Header Styles */
 .Header{
     background-color: var(--color-tertiary);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 .navbar{
     display: block;
